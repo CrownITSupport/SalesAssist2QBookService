@@ -1,0 +1,6 @@
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer\bin\Debug\SA2QBookSvc.ServiceLayer.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer\bin\Debug\SA2QBookSvc.ServiceLayer.pdb
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer\obj\Debug\SA2QBookSvc.ServiceLayer.csprojAssemblyReference.cache
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer\obj\Debug\SA2QBookSvc.ServiceLayer.csproj.CoreCompileInputs.cache
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer\obj\Debug\SA2QBookSvc.ServiceLayer.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer\obj\Debug\SA2QBookSvc.ServiceLayer.pdb

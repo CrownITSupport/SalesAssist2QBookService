@@ -1,0 +1,14 @@
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer.Tests\bin\Debug\netcoreapp2.1\SA2QBookSvc.ServiceLayer.Tests.deps.json
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer.Tests\bin\Debug\netcoreapp2.1\SA2QBookSvc.ServiceLayer.Tests.runtimeconfig.json
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer.Tests\bin\Debug\netcoreapp2.1\SA2QBookSvc.ServiceLayer.Tests.runtimeconfig.dev.json
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer.Tests\bin\Debug\netcoreapp2.1\SA2QBookSvc.ServiceLayer.Tests.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer.Tests\bin\Debug\netcoreapp2.1\SA2QBookSvc.ServiceLayer.Tests.pdb
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer.Tests\obj\Debug\netcoreapp2.1\SA2QBookSvc.ServiceLayer.Tests.csprojAssemblyReference.cache
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer.Tests\obj\Debug\netcoreapp2.1\SA2QBookSvc.ServiceLayer.Tests.csproj.CoreCompileInputs.cache
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer.Tests\obj\Debug\netcoreapp2.1\SA2QBookSvc.ServiceLayer.Tests.AssemblyInfoInputs.cache
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer.Tests\obj\Debug\netcoreapp2.1\SA2QBookSvc.ServiceLayer.Tests.AssemblyInfo.cs
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer.Tests\obj\Debug\netcoreapp2.1\SA2QBookSvc.ServiceLayer.Tests.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.ServiceLayer.Tests\obj\Debug\netcoreapp2.1\SA2QBookSvc.ServiceLayer.Tests.pdb

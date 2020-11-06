@@ -1,0 +1,6 @@
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub.Tests\bin\Debug\SA2QBookSvc.DataAccessBDSPub.Tests.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub.Tests\bin\Debug\SA2QBookSvc.DataAccessBDSPub.Tests.pdb
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub.Tests\obj\Debug\SA2QBookSvc.DataAccessBDSPub.Tests.csprojAssemblyReference.cache
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub.Tests\obj\Debug\SA2QBookSvc.DataAccessBDSPub.Tests.csproj.CoreCompileInputs.cache
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub.Tests\obj\Debug\SA2QBookSvc.DataAccessBDSPub.Tests.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub.Tests\obj\Debug\SA2QBookSvc.DataAccessBDSPub.Tests.pdb

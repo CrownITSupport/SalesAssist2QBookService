@@ -1,0 +1,8 @@
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessQuickBooks\bin\Debug\SA2QBookSvc.DataAccessQuickBooks.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessQuickBooks\bin\Debug\SA2QBookSvc.DataAccessQuickBooks.pdb
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessQuickBooks\obj\Debug\SA2QBookSvc.DataAccessQuickBooks.csprojAssemblyReference.cache
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessQuickBooks\obj\Debug\SA2QBookSvc.DataAccessQuickBooks.csproj.CoreCompileInputs.cache
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessQuickBooks\obj\Debug\SA2QBookSvc.DataAccessQuickBooks.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessQuickBooks\obj\Debug\SA2QBookSvc.DataAccessQuickBooks.pdb
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessQuickBooks\obj\Debug\Interop.QBFC13Lib.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessQuickBooks\obj\Debug\SA2QBookSvc.DataAccessQuickBooks.csproj.ResolveComReference.cache

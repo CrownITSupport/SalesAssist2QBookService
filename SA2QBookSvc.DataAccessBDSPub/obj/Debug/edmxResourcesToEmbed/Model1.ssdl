@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDSPubModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ArOpenItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerNumber" Type="int" Nullable="false" />
+    <Property Name="TransIdNumber" Type="int" Nullable="false" />
+    <Property Name="TransDate" Type="datetime" />
+    <Property Name="TransType" Type="nchar" MaxLength="3" />
+    <Property Name="SalesOrderNumber" Type="int" Nullable="false" />
+    <Property Name="ReferenceNumber" Type="nchar" MaxLength="20" />
+    <Property Name="SalesRepNumber" Type="int" Nullable="false" />
+    <Property Name="CreditTerms" Type="nchar" MaxLength="10" />
+    <Property Name="LastPaymentDate" Type="datetime" />
+    <Property Name="LastPaymentIdNumber" Type="int" Nullable="false" />
+    <Property Name="LastPaymentType" Type="nchar" MaxLength="3" />
+    <Property Name="LastPaymentAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TransTaxAmt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TransTotalAmt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TransBalance" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TransDiscountAmt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TransAdjustAmt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TransBaseCommissionAmt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TransSplitCommissionAmt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="OrigCustomerNumber" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerNumber" Type="int" Nullable="false" />
+    <Property Name="CompanyName" Type="nchar" MaxLength="30" />
+    <Property Name="AddressLine1" Type="nchar" MaxLength="30" />
+    <Property Name="AddressLine2" Type="nchar" MaxLength="30" />
+    <Property Name="City" Type="nchar" MaxLength="30" />
+    <Property Name="State" Type="nchar" MaxLength="30" />
+    <Property Name="PostalCode" Type="nchar" MaxLength="30" />
+    <Property Name="PhoneNumberMain" Type="nchar" MaxLength="30" />
+    <Property Name="ShipToCompanyName" Type="nchar" MaxLength="30" />
+    <Property Name="ShipToAddressLine1" Type="nchar" MaxLength="30" />
+    <Property Name="ShipToAddressLine2" Type="nchar" MaxLength="30" />
+    <Property Name="ShipToCity" Type="nchar" MaxLength="20" />
+    <Property Name="ShipToState" Type="nchar" MaxLength="2" />
+    <Property Name="ShipToPostalCode" Type="nchar" MaxLength="10" />
+    <Property Name="ShipToPhone" Type="nchar" MaxLength="12" />
+    <Property Name="AlphaSortCompanyName" Type="nchar" MaxLength="30" />
+    <Property Name="OwnersName" Type="nchar" MaxLength="25" />
+    <Property Name="SalesContact" Type="nchar" MaxLength="25" />
+    <Property Name="PayablesContact" Type="nchar" MaxLength="25" />
+    <Property Name="SalesRepNumber" Type="int" />
+    <Property Name="SalesRepCommissionRate" Type="int" />
+    <Property Name="DeliveryRoute" Type="int" />
+    <Property Name="SalesTaxingAuthority" Type="nchar" MaxLength="10" />
+    <Property Name="SalesTaxRate" Type="float" />
+    <Property Name="ResalePermitNumber" Type="nchar" MaxLength="20" />
+    <Property Name="BillToCustomerNumber" Type="int" />
+    <Property Name="UseBillToAddress" Type="nchar" MaxLength="1" />
+    <Property Name="PostToBillToAddress" Type="nchar" MaxLength="1" />
+    <Property Name="UseThisPriceList" Type="int" />
+    <Property Name="PricingLevel" Type="nchar" MaxLength="1" />
+    <Property Name="CreditTerms" Type="nchar" MaxLength="10" />
+    <Property Name="CreditLimit" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DateCreditLimitSet" Type="datetime" />
+    <Property Name="SendStatements" Type="nchar" MaxLength="1" />
+    <Property Name="AssessServiceCharge" Type="nchar" MaxLength="1" />
+    <Property Name="SendDelinquentLetter" Type="nchar" MaxLength="1" />
+    <Property Name="DateAccountCreated" Type="datetime" />
+    <Property Name="HighestBalanceEver" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DateHighestBalanceEver" Type="date" />
+    <Property Name="LastSalesOrderNumber" Type="int" />
+    <Property Name="ARBalance" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ARBalancePeriodCurrent" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ARBalancePeriod1" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ARBalancePeriod2" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ARBalancePeriod3" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ARBalancePeriod4" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ARBalanceOpenOrders" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="NumberOfOpenOrders" Type="int" />
+    <Property Name="CustomerSicCode" Type="nchar" MaxLength="7" />
+    <Property Name="DeliveryCharge" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="GeneralComments" Type="nvarchar" MaxLength="120" />
+    <Property Name="SalesOrderRemarks" Type="nvarchar" MaxLength="240" />
+    <Property Name="PrintSalesOrderRemarks" Type="nchar" MaxLength="1" />
+    <Property Name="CustomerIsActive" Type="nchar" MaxLength="1" />
+    <Property Name="PhoneNumberFax" Type="nchar" MaxLength="12" />
+    <Property Name="PrintAddressLabels" Type="nchar" MaxLength="1" />
+    <Property Name="SyscoCustomerCode" Type="nchar" MaxLength="3" />
+    <Property Name="SyscoRate1" Type="float" />
+    <Property Name="SyscoRate2" Type="float" />
+    <Property Name="CustomerVendorNumber" Type="nchar" MaxLength="30" />
+    <Property Name="DiscountPercentAllowed" Type="float" />
+    <Property Name="EmailAddressSalesReports" Type="nchar" MaxLength="1" />
+    <Property Name="EmailPriceListToCustomer" Type="nchar" MaxLength="1" />
+    <Property Name="EmailPriceListFormat" Type="nchar" MaxLength="1" />
+    <Property Name="EmailAddressPriceList1" Type="nvarchar" MaxLength="80" />
+    <Property Name="EmailAddressPriceList2" Type="nvarchar" MaxLength="80" />
+    <Property Name="EmailAddressPriceList3" Type="nvarchar" MaxLength="80" />
+    <Property Name="EmailAddressPriceList4" Type="nvarchar" MaxLength="80" />
+    <Property Name="EmailAddressPriceList5" Type="nvarchar" MaxLength="80" />
+    <Property Name="EmailAddressSalesReport1" Type="nvarchar" MaxLength="80" />
+    <Property Name="EmailAddressSalesReport2" Type="nvarchar" MaxLength="80" />
+    <Property Name="EmailAddressSalesReport3" Type="nvarchar" MaxLength="80" />
+    <Property Name="EmailAddressSalesReport4" Type="nvarchar" MaxLength="80" />
+    <Property Name="EmailAddressSalesReport5" Type="nvarchar" MaxLength="80" />
+    <Property Name="PrintPriceLists" Type="nchar" MaxLength="1" />
+    <Property Name="EmailStatementsToCustomer" Type="nchar" MaxLength="1" />
+    <Property Name="EmailAddressStatements1" Type="nvarchar" MaxLength="80" />
+    <Property Name="EmailAddressStatements2" Type="nvarchar" MaxLength="80" />
+    <Property Name="EmailAddressStatements3" Type="nvarchar" MaxLength="80" />
+    <Property Name="FaxPriceListToCustomer" Type="nchar" MaxLength="1" />
+    <Property Name="FaxPriceListPhoneNumber1" Type="nchar" MaxLength="30" />
+    <Property Name="FaxPriceListPhoneNumber2" Type="nchar" MaxLength="30" />
+    <Property Name="FaxPriceListPhoneNumber3" Type="nchar" MaxLength="30" />
+    <Property Name="PrintStatementsForCustomer" Type="nchar" MaxLength="1" />
+    <Property Name="FaxStatementToCustomer" Type="nchar" MaxLength="1" />
+    <Property Name="FaxStatementNumber1" Type="nchar" MaxLength="30" />
+    <Property Name="FaxStatementNumber2" Type="nchar" MaxLength="30" />
+    <Property Name="FaxStatementNumber3" Type="nchar" MaxLength="30" />
+    <Property Name="AssessFuelSurcharge" Type="nchar" MaxLength="1" />
+    <Property Name="PriceListTemplateToUse" Type="nchar" MaxLength="35" />
+    <Property Name="PLTemplateProductColumn" Type="nchar" MaxLength="1" />
+    <Property Name="PLTemplatePriceColumn" Type="nchar" MaxLength="1" />
+    <Property Name="PLTemplateDescripColumn" Type="nchar" MaxLength="1" />
+    <Property Name="PLTemplateUnitDescColumn" Type="nchar" MaxLength="1" />
+    <Property Name="PLTemplatePackDescColumn" Type="nchar" MaxLength="1" />
+    <Property Name="PLTemplateDateColumn" Type="nchar" MaxLength="1" />
+    <Property Name="PLTemplateDateRow" Type="nchar" MaxLength="3" />
+    <Property Name="SalesRepId" Type="int" />
+    <Property Name="PresentInSourceDBF" Type="nchar" MaxLength="1" />
+    <Property Name="DateLastSalesOrder" Type="datetime" />
+    <Property Name="PeriodsUsed" Type="int" />
+    <Property Name="Period01MovingAverageSales" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Period02MovingAverageSales" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Period03MovingAverageSales" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Period04MovingAverageSales" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Period05MovingAverageSales" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Period06MovingAverageSales" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Period07MovingAverageSales" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Period08MovingAverageSales" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Period09MovingAverageSales" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Period10MovingAverageSales" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="NewOrderRemarks" Type="varchar" MaxLength="1000" />
+    <Property Name="NewOrderEmailAddress" Type="varchar" MaxLength="80" />
+    <Property Name="ShowRemarksInCustEmail" Type="nchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="CustomerPriceList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductGroupCode" Type="int" />
+    <Property Name="ProductCode" Type="nchar" MaxLength="16" Nullable="false" />
+    <Property Name="EachExtensionCode" Type="nchar" MaxLength="5" />
+    <Property Name="CustomerNumber" Type="int" Nullable="false" />
+    <Property Name="ProductDescription" Type="nchar" MaxLength="30" />
+    <Property Name="Comments" Type="nchar" MaxLength="30" />
+    <Property Name="PendingSellingPrice" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SalesRepCommissionRate" Type="float" />
+    <Property Name="MarkupDollarAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="MarkupPercentage" Type="float" />
+    <Property Name="CurrentSellingPrice" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CurrentSellingPriceDate" Type="datetime" />
+    <Property Name="SalesRepNumber" Type="int" />
+    <Property Name="ProductGroupDescription" Type="nchar" MaxLength="30" />
+    <Property Name="PresentInSourceDBF" Type="nchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="CustomerProductSales">
+    <Key>
+      <PropertyRef Name="CustomerNumber" />
+      <PropertyRef Name="ProductGroupCode" />
+      <PropertyRef Name="ProductCode" />
+    </Key>
+    <Property Name="CustomerNumber" Type="int" Nullable="false" />
+    <Property Name="ProductGroupCode" Type="int" Nullable="false" />
+    <Property Name="ProductCode" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="ProductGroupDescription" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ProductDescription" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="CurrentSellingPrice" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SoldByDescription" Type="varchar" MaxLength="10" />
+    <Property Name="EachExtensionCode" Type="nchar" MaxLength="3" />
+    <Property Name="Comments" Type="nchar" MaxLength="30" />
+    <Property Name="LastSaleDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DebugTrace">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TimeStamp" Type="datetime" />
+    <Property Name="ClassAndMethod" Type="nvarchar" MaxLength="256" />
+    <Property Name="SeqID" Type="nchar" MaxLength="4" />
+    <Property Name="TextLine" Type="nvarchar" MaxLength="256" />
+    <Property Name="SessionId" Type="nchar" MaxLength="30" />
+    <Property Name="LoginUserName" Type="nchar" MaxLength="30" />
+    <Property Name="TraceEventCode" Type="nchar" MaxLength="5" />
+    <Property Name="TraceEventDescrip" Type="nchar" MaxLength="100" />
+    <Property Name="OriginIPAddress" Type="nchar" MaxLength="20" />
+    <Property Name="OriginIpForwardedFor" Type="nchar" MaxLength="20" />
+    <Property Name="CurrentUrl" Type="nvarchar" MaxLength="256" />
+    <Property Name="LoginName" Type="nchar" MaxLength="30" />
+    <Property Name="LoginUserRole" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductCode" Type="nchar" MaxLength="16" Nullable="false" />
+    <Property Name="ProductGroupCode" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nchar" MaxLength="30" />
+    <Property Name="AlphaSortDescrip" Type="nchar" MaxLength="30" />
+    <Property Name="EachUnitOfMeas" Type="nchar" MaxLength="5" />
+    <Property Name="EachExtensionCode" Type="nchar" MaxLength="3" />
+    <Property Name="UnitCost" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="OnHandQuantity" Type="float" />
+    <Property Name="OnHandWeight" Type="float" />
+    <Property Name="ReserveQuantity" Type="float" />
+    <Property Name="ReserveWeight" Type="float" />
+    <Property Name="ReserveOrdered" Type="float" />
+    <Property Name="ReserveDateOrdered" Type="datetime" />
+    <Property Name="LastSaleInvoiceNumber" Type="int" />
+    <Property Name="LastSaleDate" Type="datetime" />
+    <Property Name="LastSaleCustomer" Type="int" />
+    <Property Name="LastSaleQuantity" Type="float" />
+    <Property Name="LastSaleUnitPrice" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="LastSaleDollarAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ProductGroupId" Type="int" />
+    <Property Name="NewProductStatus" Type="nchar" MaxLength="1" />
+    <Property Name="NewProductStopListingDate" Type="datetime" />
+    <Property Name="NewProductComments" Type="nvarchar" MaxLength="1536" />
+    <Property Name="ProductSpecialStatus" Type="nchar" MaxLength="1" />
+    <Property Name="ProductSpecialStartDate" Type="datetime" />
+    <Property Name="ProductSpecialStopDate" Type="datetime" />
+    <Property Name="ProductSpecialComments" Type="nvarchar" MaxLength="1536" />
+    <Property Name="NewProductAvailableDate" Type="datetime" />
+    <Property Name="PresentInSourceDBF" Type="nchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="ProductGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductGroupCode" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="30" />
+    <Property Name="PresentInSourceDBF" Type="nchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="SalesHistoryDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SalesRepNumber" Type="int" Nullable="false" />
+    <Property Name="CustomerNumber" Type="int" Nullable="false" />
+    <Property Name="BillToCustomer" Type="int" Nullable="false" />
+    <Property Name="InvoiceNumber" Type="int" Nullable="false" />
+    <Property Name="InvoiceDate" Type="datetime" Nullable="false" />
+    <Property Name="InvoiceDateYear" Type="int" Nullable="false" />
+    <Property Name="InvoiceDateWeekOfYear" Type="int" Nullable="false" />
+    <Property Name="SalesOrderNumber" Type="int" Nullable="false" />
+    <Property Name="DateSalesOrderEntered" Type="datetime" Nullable="false" />
+    <Property Name="DateDeliveryRequired" Type="datetime" Nullable="false" />
+    <Property Name="DateDelivered" Type="datetime" Nullable="false" />
+    <Property Name="DateDeliveredYear" Type="int" Nullable="false" />
+    <Property Name="DateDeliveredWeekOfYear" Type="int" Nullable="false" />
+    <Property Name="DetailLineNumber" Type="int" Nullable="false" />
+    <Property Name="SalesOrderReceivedBy" Type="nchar" MaxLength="3" Nullable="false" />
+    <Property Name="SalesRepNumberOriginal" Type="int" Nullable="false" />
+    <Property Name="ShipToCompanyName" Type="nchar" MaxLength="30" Nullable="false" />
+    <Property Name="DeliveryRoute" Type="int" Nullable="false" />
+    <Property Name="DeliveryRouteStop" Type="int" Nullable="false" />
+    <Property Name="ProductGroupCode" Type="int" Nullable="false" />
+    <Property Name="ProductCode" Type="nchar" MaxLength="16" Nullable="false" />
+    <Property Name="ProductDescription" Type="nchar" MaxLength="30" Nullable="false" />
+    <Property Name="QuantityOrdered" Type="float" Nullable="false" />
+    <Property Name="QuantityShipped" Type="float" Nullable="false" />
+    <Property Name="CasesOrdered" Type="float" Nullable="false" />
+    <Property Name="CasesShipped" Type="float" Nullable="false" />
+    <Property Name="CaseDescription" Type="nchar" MaxLength="5" Nullable="false" />
+    <Property Name="PricingUnitOfMeas" Type="nchar" MaxLength="3" Nullable="false" />
+    <Property Name="CostPerUnit" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="PricePerUnit" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="CostExtended" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="PriceExtended" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="CostingWeight" Type="float" Nullable="false" />
+    <Property Name="PricingWeight" Type="float" Nullable="false" />
+    <Property Name="SalesRepCommissionRate" Type="float" Nullable="false" />
+    <Property Name="SalesRepSplitCommRate" Type="float" Nullable="false" />
+    <Property Name="SalesRepForSplitComm" Type="int" Nullable="false" />
+    <Property Name="BaseCommissionExtended" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="SplitCommissionExtended" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="SalesTaxRate" Type="float" Nullable="false" />
+    <Property Name="SalesTaxAuthority" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="SaleIsTaxable" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="SalesTaxAmt" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="DetailLineVoided" Type="nchar" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SalesOrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SalesOrderNumber" Type="int" Nullable="false" />
+    <Property Name="DetailLineNumber" Type="int" Nullable="false" />
+    <Property Name="QuantityOrdered" Type="float" />
+    <Property Name="QuantityShipped" Type="float" />
+    <Property Name="CasesOrdered" Type="float" />
+    <Property Name="CasesShipped" Type="float" />
+    <Property Name="CaseDescription" Type="nchar" MaxLength="5" />
+    <Property Name="ProductCode" Type="nchar" MaxLength="16" />
+    <Property Name="ProductDescription" Type="nchar" MaxLength="30" />
+    <Property Name="DetailLineComment" Type="nvarchar" MaxLength="100" />
+    <Property Name="SalesRepCommissionRate" Type="float" />
+    <Property Name="ExtendedCommisionAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ProductGroupCode" Type="int" />
+    <Property Name="PricingUnitOfMeas" Type="nchar" MaxLength="3" />
+    <Property Name="PricigUnits" Type="float" />
+    <Property Name="CostPerUnit" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PricePerUnit" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CostExtended" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PriceExtended" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CostingWeight" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PricingWeight" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SalesOrderHeaderId" Type="int" />
+    <Property Name="ProductsId" Type="int" />
+    <Property Name="PresentInSourceDBF" Type="nchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="SalesOrderHeader">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SalesOrderNumber" Type="int" Nullable="false" />
+    <Property Name="SalesRepNumber" Type="int" />
+    <Property Name="CustomerNumber" Type="int" />
+    <Property Name="ShipToCompanyName" Type="nchar" MaxLength="30" />
+    <Property Name="ShipToAddressLine1" Type="nchar" MaxLength="30" />
+    <Property Name="ShipToAddressLine2" Type="nchar" MaxLength="30" />
+    <Property Name="ShipToCity" Type="nchar" MaxLength="20" />
+    <Property Name="ShipToState" Type="nchar" MaxLength="2" />
+    <Property Name="ShipToPostalCode" Type="nchar" MaxLength="10" />
+    <Property Name="CreditTerms" Type="nchar" MaxLength="10" />
+    <Property Name="DateSalesOrderEntered" Type="datetime" />
+    <Property Name="DateDeliveryRequired" Type="datetime" />
+    <Property Name="DeliveryReqComments" Type="nchar" MaxLength="30" />
+    <Property Name="DeliveryScheduledDate" Type="datetime" />
+    <Property Name="PurchaseOrderNumber" Type="nchar" MaxLength="30" />
+    <Property Name="SalesOrderReceivedBy" Type="nchar" MaxLength="3" />
+    <Property Name="SalesOrderEnteredBy" Type="nchar" MaxLength="8" />
+    <Property Name="SalesOrderComments" Type="nchar" MaxLength="250" />
+    <Property Name="HowShipped" Type="nchar" MaxLength="2" />
+    <Property Name="ShipVia" Type="nchar" MaxLength="20" />
+    <Property Name="DeliveryRoute" Type="int" />
+    <Property Name="DeliveryRouteStop" Type="int" />
+    <Property Name="NumberOfPieces" Type="int" />
+    <Property Name="ShipmentWeight" Type="float" />
+    <Property Name="FreightFobDescrip" Type="nchar" MaxLength="30" />
+    <Property Name="FreightPrepaid" Type="nchar" MaxLength="1" />
+    <Property Name="OrderHasBeenVoided" Type="nchar" MaxLength="1" />
+    <Property Name="OrderVoidedDateTime" Type="datetime" />
+    <Property Name="OrderVoidedBy" Type="nchar" MaxLength="15" />
+    <Property Name="OrderVoidApprovedBy" Type="nchar" MaxLength="15" />
+    <Property Name="OrderVoidedReason" Type="nchar" MaxLength="30" />
+    <Property Name="PostedToInventory" Type="nchar" MaxLength="1" />
+    <Property Name="InvoicingStatus" Type="nchar" MaxLength="7" />
+    <Property Name="InvoicedAtDateTime" Type="datetime" />
+    <Property Name="InvoiceDate" Type="datetime" />
+    <Property Name="InvoiceNumber" Type="int" />
+    <Property Name="HasBeenBackordered" Type="nchar" MaxLength="1" />
+    <Property Name="BackOrderedToOrderNum" Type="int" />
+    <Property Name="BackOrderedFromOrderNum" Type="int" />
+    <Property Name="BackOrderedFromPONumber" Type="nchar" MaxLength="30" />
+    <Property Name="SaleIsTaxable" Type="nchar" MaxLength="1" />
+    <Property Name="SalesTaxRate" Type="float" />
+    <Property Name="SalesTaxingAuthority" Type="nchar" MaxLength="10" />
+    <Property Name="TotFreightAmt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DiscountPercent" Type="float" />
+    <Property Name="TotDiscountAmt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotExtraChargeAmt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotCodFee" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotDutyFee" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotTaxAmt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotProductPriceAmt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotInvoiceAmt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotInvoiceProductCost" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotBaseCommissionAmt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotSplitCommissionAmt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotCommissionAmt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SalesRepNumber2" Type="int" />
+    <Property Name="DateTimeOrderPrinted" Type="datetime" />
+    <Property Name="DateTimeInvoicePrinted" Type="datetime" />
+    <Property Name="CustomerId" Type="int" />
+    <Property Name="PresentInSourceDBF" Type="nchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="SalesRep">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SalesRepNumber" Type="int" Nullable="false" />
+    <Property Name="SalesRepName" Type="nchar" MaxLength="20" />
+    <Property Name="SalesRepSchedule" Type="int" />
+    <Property Name="SalesRepSplitCommission" Type="float" />
+    <Property Name="SalesRepPayCommission" Type="nchar" MaxLength="1" />
+    <Property Name="SalesRepSalesAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SalesRepActive" Type="nchar" MaxLength="1" />
+    <Property Name="SalesRepActiveStatusDate" Type="smalldatetime" />
+    <Property Name="SalesRepRole" Type="nchar" MaxLength="10" />
+    <Property Name="SalesRepPassword" Type="nchar" MaxLength="20" />
+    <Property Name="SalesRepLoginName" Type="nchar" MaxLength="20" />
+    <Property Name="PresentInSourceDBF" Type="nchar" MaxLength="1" />
+    <Property Name="CurrentActivityOriginIPAddress" Type="nchar" MaxLength="20" />
+    <Property Name="CurrentActivityLastDateTime" Type="datetime" />
+    <Property Name="CurrentActivitySessionId" Type="nchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastLoginDate" Type="datetime" Nullable="false" />
+    <Property Name="UserSetupDate" Type="datetime" Nullable="false" />
+    <Property Name="UserIsInactive" Type="nchar" MaxLength="1" Nullable="false" />
+    <Property Name="UserInactiveDate" Type="datetime" Nullable="false" />
+    <Property Name="CustomerNumber" Type="int" Nullable="false" />
+    <Property Name="SalesRepNumber" Type="int" Nullable="false" />
+    <Property Name="Password" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="PasswordOld01" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="PasswordSetDate" Type="datetime" Nullable="false" />
+    <Property Name="PasswordExpirationDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK_ArOpenItemsToCustomers' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK_ArOpenItemsToCustomers" />-->
+  <Association Name="FK_CustomersToSalesReps">
+    <End Role="SalesRep" Type="Self.SalesRep" Multiplicity="0..1" />
+    <End Role="Customer" Type="Self.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesRep">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="SalesRepId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductsToProductGroups">
+    <End Role="ProductGroup" Type="Self.ProductGroup" Multiplicity="0..1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductGroup">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ProductGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderDetailsToProducts">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="SalesOrderDetail" Type="Self.SalesOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalesOrderDetail">
+        <PropertyRef Name="ProductsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderDetailsToSalesOrderHeaders">
+    <End Role="SalesOrderHeader" Type="Self.SalesOrderHeader" Multiplicity="0..1" />
+    <End Role="SalesOrderDetail" Type="Self.SalesOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesOrderHeader">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalesOrderDetail">
+        <PropertyRef Name="SalesOrderHeaderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SalesOrderHeadersToCustomers">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="SalesOrderHeader" Type="Self.SalesOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalesOrderHeader">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BDSPubModelStoreContainer">
+    <EntitySet Name="ArOpenItem" EntityType="Self.ArOpenItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomerPriceList" EntityType="Self.CustomerPriceList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomerProductSales" EntityType="Self.CustomerProductSales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DebugTrace" EntityType="Self.DebugTrace" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductGroup" EntityType="Self.ProductGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SalesHistoryDetail" EntityType="Self.SalesHistoryDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SalesOrderDetail" EntityType="Self.SalesOrderDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SalesOrderHeader" EntityType="Self.SalesOrderHeader" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SalesRep" EntityType="Self.SalesRep" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserProfile" EntityType="Self.UserProfile" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_CustomersToSalesReps" Association="Self.FK_CustomersToSalesReps">
+      <End Role="SalesRep" EntitySet="SalesRep" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductsToProductGroups" Association="Self.FK_ProductsToProductGroups">
+      <End Role="ProductGroup" EntitySet="ProductGroup" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderDetailsToProducts" Association="Self.FK_SalesOrderDetailsToProducts">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="SalesOrderDetail" EntitySet="SalesOrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderDetailsToSalesOrderHeaders" Association="Self.FK_SalesOrderDetailsToSalesOrderHeaders">
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeader" />
+      <End Role="SalesOrderDetail" EntitySet="SalesOrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="SalesOrderHeadersToCustomers" Association="Self.SalesOrderHeadersToCustomers">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeader" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,12 @@
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub\bin\Debug\SA2QBookSvc.DataAccessBDSPub.dll.config
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub\bin\Debug\SA2QBookSvc.DataAccessBDSPub.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub\bin\Debug\SA2QBookSvc.DataAccessBDSPub.pdb
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub\bin\Debug\EntityFramework.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub\bin\Debug\EntityFramework.xml
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub\obj\Debug\SA2QBookSvc.DataAccessBDSPub.csprojAssemblyReference.cache
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub\obj\Debug\SA2QBookSvc.DataAccessBDSPub.csproj.CoreCompileInputs.cache
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub\obj\Debug\SA2QBookSvc.DataAccessBDSPub.csproj.CopyComplete
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub\obj\Debug\SA2QBookSvc.DataAccessBDSPub.dll
+C:\Users\scott\source\repos\SalesAssist2QBooksService\SA2QBookSvc.DataAccessBDSPub\obj\Debug\SA2QBookSvc.DataAccessBDSPub.pdb
