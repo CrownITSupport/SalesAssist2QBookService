@@ -7,10 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SA2QBookSvc.WebAPI", "SA2QB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SA2QBookSvc.WebAPI.Tests", "SA2QBookSvc.WebAPI.Tests\SA2QBookSvc.WebAPI.Tests.csproj", "{2E898C7D-0380-41D1-80F2-3D03A578C9A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SA2QBookSvc.Services", "SA2QBookSvc.Services\SA2QBookSvc.Services.csproj", "{4C2AF5F6-E79D-4A1F-A817-8B8753E6CFBA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SA2QBookSvc.Services.Tests", "SA2QBookSvc.Services.Tests\SA2QBookSvc.Services.Tests.csproj", "{456D2C2C-FA28-49CF-8163-E71E42BB580C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,14 +21,6 @@ Global
 		{2E898C7D-0380-41D1-80F2-3D03A578C9A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E898C7D-0380-41D1-80F2-3D03A578C9A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E898C7D-0380-41D1-80F2-3D03A578C9A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4C2AF5F6-E79D-4A1F-A817-8B8753E6CFBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C2AF5F6-E79D-4A1F-A817-8B8753E6CFBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C2AF5F6-E79D-4A1F-A817-8B8753E6CFBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C2AF5F6-E79D-4A1F-A817-8B8753E6CFBA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{456D2C2C-FA28-49CF-8163-E71E42BB580C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{456D2C2C-FA28-49CF-8163-E71E42BB580C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{456D2C2C-FA28-49CF-8163-E71E42BB580C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{456D2C2C-FA28-49CF-8163-E71E42BB580C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
