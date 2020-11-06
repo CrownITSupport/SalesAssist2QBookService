@@ -7,6 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SA2QBookSvc.WebAPI", "SA2QB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SA2QBookSvc.WebAPI.Tests", "SA2QBookSvc.WebAPI.Tests\SA2QBookSvc.WebAPI.Tests.csproj", "{2E898C7D-0380-41D1-80F2-3D03A578C9A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SA2QBookSvc.ServiceLayer", "SA2QBookSvc.ServiceLayer\SA2QBookSvc.ServiceLayer.csproj", "{37263AEE-A2A7-4F88-84B6-AA646352A320}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SA2QBookSvc.ServiceLayer.Tests", "SA2QBookSvc.ServiceLayer.Tests\SA2QBookSvc.ServiceLayer.Tests.csproj", "{CC889298-F398-4C7A-958E-7240EA9692E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SA2QBookSvc.DataAccessQuickBooks", "SA2QBookSvc.DataAccessQuickBooks\SA2QBookSvc.DataAccessQuickBooks.csproj", "{6E08E05A-A4AD-4B21-825F-9273C572599C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SA2QBookSvc.DataAccessQuickBooks.Tests", "SA2QBookSvc.DataAccessQuickBooks.Tests\SA2QBookSvc.DataAccessQuickBooks.Tests.csproj", "{B7483802-BDB7-4EB2-A2A4-699F717D590C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +29,22 @@ Global
 		{2E898C7D-0380-41D1-80F2-3D03A578C9A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E898C7D-0380-41D1-80F2-3D03A578C9A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E898C7D-0380-41D1-80F2-3D03A578C9A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37263AEE-A2A7-4F88-84B6-AA646352A320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37263AEE-A2A7-4F88-84B6-AA646352A320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37263AEE-A2A7-4F88-84B6-AA646352A320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37263AEE-A2A7-4F88-84B6-AA646352A320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC889298-F398-4C7A-958E-7240EA9692E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC889298-F398-4C7A-958E-7240EA9692E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC889298-F398-4C7A-958E-7240EA9692E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC889298-F398-4C7A-958E-7240EA9692E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E08E05A-A4AD-4B21-825F-9273C572599C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E08E05A-A4AD-4B21-825F-9273C572599C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E08E05A-A4AD-4B21-825F-9273C572599C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E08E05A-A4AD-4B21-825F-9273C572599C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7483802-BDB7-4EB2-A2A4-699F717D590C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7483802-BDB7-4EB2-A2A4-699F717D590C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7483802-BDB7-4EB2-A2A4-699F717D590C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7483802-BDB7-4EB2-A2A4-699F717D590C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
